@@ -72,7 +72,7 @@ async function setupGitRepository(targetPath, question) {
                 execSync("git remote remove origin", {
                     stdio: "ignore",
                 })
-                execSync("git remote add upstream https://github.com/LebCit/aether-cms.git", {
+                execSync("git remote add upstream https://github.com/zeluis/create-aether-cms16.git", {
                     stdio: "ignore",
                 })
                 console.log("✅ Set up upstream remote for updates")
@@ -141,7 +141,7 @@ async function setupGitRepository(targetPath, question) {
  * Clone repository with specific version targeting
  */
 async function cloneRepository(targetPath, options) {
-    const repoUrl = "https://github.com/LebCit/aether-cms.git"
+    const repoUrl = "https://github.com/zeluis/create-aether-cms16.git"
 
     try {
         // Always do a full clone first
@@ -283,7 +283,7 @@ export async function validateTarget(target, type) {
     }
 
     try {
-        const repoUrl = "https://github.com/LebCit/aether-cms.git"
+        const repoUrl = "https://github.com/zeluis/aether-cms16.git"
         const tags = execSync(`git ls-remote --tags ${repoUrl}`, {
             encoding: "utf8",
         })
