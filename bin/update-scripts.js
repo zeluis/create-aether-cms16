@@ -11,7 +11,7 @@ import { execSync } from "child_process"
  * Configuration for update scripts
  */
 const CONFIG = {
-    REPO_URL: "https://github.com/LebCit/aether-cms.git",
+    REPO_URL: "https://github.com/zeluis/aether-cms16.git",
     REMOTE_NAME: "upstream",
     DEFAULT_BRANCH: "main",
     SCRIPTS_DIR: "assets/js",
